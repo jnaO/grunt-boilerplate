@@ -1,0 +1,10 @@
+{
+  "root": "app",
+  "static": "app/static",
+  "templates": "app/views",
+  "css": "app/static/css",
+  "sass": "app/static/css/sass",
+  "js": "app/static/js",
+  "json": "app/static/json",
+  "context": "app/context"
+}

@@ -1,0 +1,32 @@
+# pre distrubution test for local verification
+# that all minification and cache bustning works
+default:
+  - 'clean'
+  - 'sass:prod'
+  - 'requirejs:compile'
+  - 'jinja2:compile'
+  - 'cachebuster'
+  - 'updateMd5'
+  - 'copy'
+  - 'replace:dist'
+
+# Developmend, unminified, un-cachebusted
+dev:
+  - 'clean'
+  - 'svgmin'
+  - 'webfont'
+  - 'requirejs:dev'
+  - 'jinja2:compile'
+  - 'replace:dev'
+  - 'sass:dev'
+  - 'watch'
+
+# clean, minify, cachebust and deploy to "granska"
+dep_dist:
+  - 'default'
+  - 'rsync:dist'
+
+# clean, minify, cachebust and deploy to production
+dep_prod:
+  - 'default'
+  - 'rsync:prod'

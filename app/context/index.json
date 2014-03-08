@@ -1,0 +1,24 @@
+{
+  "title": "JNAO DEFAULT",
+  "meta": {
+    "description": "JNAO DESCRIPTION",
+    "keywords": "JNAO, KEY, WORD, KEYWORDS"
+  },
+  "og": {
+    "url": "WEBSITE DOMAIN",
+    "type": "website",
+    "title": "JNAO DEFAULT OG TITLE",
+    "image": "PATH/TO/IMAGE",
+    "site_name": "JNAO DEFAULT SITE NAME",
+    "description": "JNAO SITE IN PROGRESS"
+  },
+  "path": {
+    "root": "/",
+    "static": "static",
+    "templates": "views",
+    "css": "static/css",
+    "sass": "static/css/sass",
+    "js": "static/js",
+    "json": "static/json"
+  }
+}
