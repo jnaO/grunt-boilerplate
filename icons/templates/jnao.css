@@ -1,0 +1,64 @@
+
+// .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
+
+//        _____)
+//      /                                     /)
+//     /   ___    _ __    _  __  _  _/_  _  _(/
+//    /     / ) _(/_/ (__(/_/ (_(_(_(___(/_(_(_
+//   (____ /
+
+// .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
+
+
+
+<% if (fontfaceStyles) { %>@font-face
+  font-family: "<%= fontBaseName %>"<% if (fontSrc1) { %>
+  src: <%= fontSrc1 %><% }%>
+  src: <%= fontSrc2 %>
+  font-weight: normal
+  font-style: normal
+
+<% } %>
+<% if (baseStyles) { %>
+
+// .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
+
+
+//   /)                            /)
+//  (/_ _   _    _     _  _/_     //  _
+// /_) (_(_/_)__(/_   /_)_(__(_/_(/__(/_
+//                          .-/
+//                         (_/
+
+// .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
+
+.icon
+  font-family: "<%= fontBaseName %>"
+  display: inline-block
+  vertical-align: middle
+  &:before
+    font-weight: normal
+    font-style: normal
+    speak: none
+    text-decoration: inherit
+    text-transform: none
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+<% } %>
+<% if (iconsStyles) { %>
+
+// .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
+
+//   ,
+//     _  _____   _
+// _(_(__(_) / (_/_)_
+
+
+// .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
+
+<% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { %>
+.<%= classPrefix %><%= glyphs[glyphIdx] %>:before
+  content: "\<%= codepoints[glyphIdx] %>"
+<% } %><% } %>

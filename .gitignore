@@ -50,3 +50,4 @@ prod
 *.php
 *.html
 app/static/json
+!icons/templates/jnao.css
