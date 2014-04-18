@@ -26,4 +26,17 @@ module.exports =
         dependencies: false
       # by deafult - use matchdep default findup to locate package.json
       packageJson: null
+  all:
+    options:
+      # just report
+      updateType: 'force'
+      # don't report ok packages by default
+      reportUpdated: true
+      # what packages to check
+      packages:
+        # only devDependencies by default
+        devDependencies: true
+        dependencies: false
+      # by deafult - use matchdep default findup to locate package.json
+      packageJson: null
 

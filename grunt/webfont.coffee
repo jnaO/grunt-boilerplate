@@ -10,7 +10,7 @@ module.exports =
       order: 'eot,svg,woff,ttf'
       stylesheet: 'sass'
       destHtml: 'app/ico'
-      startCodepoint: '0xE001'
+      startCodepoint: 0xE001
       engine: 'fontforge'
 
 
