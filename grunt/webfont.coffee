@@ -12,5 +12,5 @@ module.exports =
       destHtml: 'app/ico'
       startCodepoint: 0xE001
       engine: 'fontforge'
-
+      template: 'icons/templates/jnao.css'
 
